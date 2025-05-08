@@ -83,12 +83,50 @@ String d = "panes";
 //Como se declara la lista
 //List
 
-List <String> compras = ["leche", "arroz", "azucar", "panes"];
-List <String> compras2 = [a,b,c,d];
+List<String> compras = ["leche", "arroz", "azucar", "panes"];
+List<String> compras2 = [a,b,c,d];
 
 print(compras);
 
-List <double> numbers = [1.25, 3.25, 1, 3, 2];
+List<double> numbers = [1.25, 3.25, 1, 3, 2];
 print(numbers);
+
+//Lista 1.25 1 Sol True, quiero que sea el mismo tipo de variable
+//List  <var> x
+//List <int, double,String,bool> x
+//Sin declarar
+
+//dynamic
+
+//dynamic
+var listaX = [1.25, 1, "Sol", true];
+List<dynamic> listaY = [1.25, 1, "Sol", true];
+///variable que es inmutable
+///
+final listaZ = [1.25, 1, "Sol", true];
+
+
+//Que puedo hacer con las listas?
+print(listaZ);
+
+//add se puede agregar elementos a la lista
+listaZ.add("Casa");
+print(listaZ);
+//Pueden acceder a un valores especifico
+//Posiciones
+//[1.25 , 1 , Sol , true , Casa ]
+// 0 1 2 3 4
+print(listaZ[4]);
+//Como saber que posicion es?
+//listaZ.firstWhere(test) -> callbacks funciones - funciones - true
+
+//Longitud de la lista
+print(listaZ.length);
+
+
+//TAREA 2
+//1.Crearse una lista de lo que sea
+//2. Imprimir el ultimo valor de la lista, sin usar las posiciones quemadas
+//No usar el last
 
 }
