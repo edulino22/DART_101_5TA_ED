@@ -122,7 +122,7 @@ print(listaZ[4]);
 
 //Longitud de la lista
 print(listaZ.length);
-String nombre = "eduardo";
+String nombre = "Marcelo";
 
 //TAREA 2
 //1.Crearse una lista de lo que sea
