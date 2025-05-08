@@ -122,8 +122,9 @@ print(listaZ[4]);
 
 //Longitud de la lista
 print(listaZ.length);
-String nombre = "Marcelo";
-print(nombre);
+
+List<String> animales = ["perro", "gato", "loro"];
+print(animales);
 
 //TAREA 2
 //1.Crearse una lista de lo que sea
