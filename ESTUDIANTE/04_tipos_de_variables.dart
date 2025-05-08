@@ -122,11 +122,12 @@ print(listaZ[4]);
 
 //Longitud de la lista
 print(listaZ.length);
-
+String nombre = "eduardo";
 
 //TAREA 2
 //1.Crearse una lista de lo que sea
 //2. Imprimir el ultimo valor de la lista, sin usar las posiciones quemadas
 //No usar el last
+
 
 }
