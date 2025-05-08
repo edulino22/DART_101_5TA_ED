@@ -71,9 +71,24 @@ final valorNumericoDecimal = double.parse(valorString);
 print(valorNumericoDecimal);
 
 
+/// Me falta comprar Leche, arroz, azucar, panes
+/// 
+String a = "Leche";
+String b = "arroz";
+String c = "azucar";
+String d = "panes";
 
+//Listas
+// Las listas se crean [los elementos de la lista]
+//Como se declara la lista
+//List
 
+List <String> compras = ["leche", "arroz", "azucar", "panes"];
+List <String> compras2 = [a,b,c,d];
 
+print(compras);
 
+List <double> numbers = [1.25, 3.25, 1, 3, 2];
+print(numbers);
 
 }
