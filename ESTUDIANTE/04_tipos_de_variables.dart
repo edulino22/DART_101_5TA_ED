@@ -124,7 +124,6 @@ print(listaZ[4]);
 print(listaZ.length);
 
 List<String> animales = ["perro", "gato", "loro"];
-print(animales);
 
 //TAREA 2
 //1.Crearse una lista de lo que sea
