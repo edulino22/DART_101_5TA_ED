@@ -110,4 +110,9 @@ print(miCadena);
 
 print("El restaurante ${miCadena["restaurante"]?["nombre"]} tiene un plato fuerte llamado ${miCadena["restaurante1"]?["fuerte"]}");
 
+
+// 2. Imprimir el mensaje de ejemplo: El restaurante Eliza tiene un plato fuerte llamado desayunos
+  // Para todos los restaurantes utilizando la concatenación.
+
+
 }
