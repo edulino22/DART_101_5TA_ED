@@ -108,6 +108,6 @@ print(miCadena);
   print(miCadena["restaurante1"]);
   print(miCadena["restaurante1"]?["fuerte"]);
 
-
+print("El restaurante ${miCadena["restaurante"]?["nombre"]} tiene un plato fuerte llamado ${miCadena["restaurante1"]?["fuerte"]}");
 
 }
