@@ -1,37 +1,31 @@
 void main () {
-Map<String, String> datos_restaurante1 = {
+Map<String, String> restaurante1 = {
 "Nombre": "Eliza",
-"Direccion" : "Manta",
-"Telefono" : "0995544332",
 };
 
-Map<String, String> datos_restaurante2 = {
-"Nombre" : "Perez",
-"Direccion" : "Via San Matea",
-"Telefono" : "0933448800",
+Map<String, String> restaurante2 = {
+"Nombre": "Perez",
 };
 
-Map<String, String> datos_restaurante3 = {
-"Nombre" : "Remoto",
-"Direccion" : "Km 2 Ruta Spondylus",
-"Telefono" : "0988321400" ,
+Map<String, String> restaurante3 = {
+"Nombre": "Remoto",
 };
 
-Map<String, String> menu_restaurante1 = {
+Map<String, String> menuRes1 = {
 "Entrada" : "Caprese",
 "Fuerte" : "Salmon con couscous",
 "Bebida" : "Vino blanco",
 "Postre" : "Tiramisu",
 };
 
-Map<String, String> menu_restaurante2 = {
+Map<String, String> menuRes2 = {
 "Entrada" : "Empanada",
 "Fuerte" : "Lomo Saltado",
 "Bebida" : "Jugo Natural",
 "Postre" :  "Tres Leches",
 };
 
-Map<String, String> menu_restaurante3 = {
+Map<String, String> menuRes3 = {
 "Entrada" : "Hummus",
 "Fuerte" : "Curry de garbanzos",
 "Bebida" : "Gaseosa",
@@ -39,21 +33,30 @@ Map<String, String> menu_restaurante3 = {
 };
 
 
-
- final Map<String, Map<String, dynamic>> resMenu = {
-  "Restaurante1" : {...datos_restaurante1,
-  "Menu" : menu_restaurante1,
+final Map<String, Map<String, dynamic>> combinado = {
+  "RESTAURANTE1" : {...restaurante1,
+  "Menu" : menuRes1,
   },
-  
-  "Restaurante2" : {...datos_restaurante2,
-  "Menu" : menu_restaurante2,
-  },
+  "RESTAURANTE2" : {...restaurante2,
+  "Menu" : menuRes2,
+},
+"RESTAURANTE3" : {...restaurante3,
+ "Menu" : menuRes3,
+},
+};
 
-  "Restaurante3" : {...datos_restaurante3,
-  "Menu" : menu_restaurante3,
-  },
-  };
-  print(resMenu);
+print(combinado);
+print(combinado["RESTAURANTE1"]?["Nombre"]);
+print(combinado["RESTAURANTE2"]?["Nombre"]);
+print(combinado["RESTAURANTE3"]?["Nombre"]);
+print(combinado["RESTAURANTE1"]?["Menu"]?["Entrada"]);
 
-   
+
+
+print("El restaurante ${combinado["RESTAURANTE1"]?["Nombre"]} tiene un plato fuerte llamado ${combinado["RESTAURANTE1"]?["Menu"]?["Fuerte"]}");
+print("El restaurante ${combinado["RESTAURANTE2"]?["Nombre"]} tiene un plato fuerte llamado ${combinado["RESTAURANTE2"]?["Menu"]?["Fuerte"]}");
+print("El restaurante ${combinado["RESTAURANTE3"]?["Nombre"]} tiene un plato fuerte llamado ${combinado["RESTAURANTE3"]?["Menu"]?["Fuerte"]}");
+
+
+
 }
